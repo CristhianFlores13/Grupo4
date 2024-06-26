@@ -37,16 +37,21 @@ h2 {
     margin-bottom: 1rem;
   }
 
+  .test {
+    width: 100%;
+    overflow: hidden;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 2rem;
+  }
+
   .header {
-    margin-left: 1%;
+    overflow: hidden;
     margin-bottom: 1rem;
     margin-top: -1rem;
   }
-  .test {
-    font-family: fantasy;
-    text-align: center;
-    width: 30%;
-    margin-left: 2%;
-    display: flex;
-    font-size: 50px;
+
+  body {
+    max-width: auto;
   }
