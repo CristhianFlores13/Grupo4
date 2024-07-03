@@ -72,7 +72,7 @@
         left: 23%;
         transform: translate(-50%, -50%);
         color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.13);
+        background-color: rgba(0, 0, 0, 0.144);
         padding: 10px;
         border-radius: 10%;
         margin-right: 40rem;
@@ -89,7 +89,7 @@
         left: 40%;
         transform: translate(-50%, -50%);
         color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(54, 153, 87);
         padding: 10px;
         border-radius: 25px;
         text-align: center;
@@ -103,39 +103,52 @@
         transform: translate(-50%, -50%);
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         border-radius: 25px;
         text-align: center;
   }
-  /*.playwrite-ng-modern-Nombre {
-    font-family: "Playwrite NG Modern", cursive;
-    font-optical-sizing: auto;
-    font-weight: auto;
-    font-style: normal;
-    font-size: 3.5rem;
-    margin-top: 5rem;
-    color: white;
-    font-weight: bold;
-    -webkit-text-stroke: 0.5px #000000;
-  }*/
+  
 
-  /*.cinzel-uniquifier {
-    background-color: rgba(0, 0, 0, 0.548);
+  .adopciones {
+    max-width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .titulo {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .cat {
+    width: auto;
+    height: 25rem;
+    margin-left: 10rem;
     border-radius: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color: rgb(0, 0, 0);
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 3.5rem;
-    margin-top: 7rem;
-    font-weight: bold;
-    -webkit-text-stroke: 1px #ffffff;
-  }*/
+
+  }
+
+  .cat2 {
+    width: auto;
+    height: 25rem;
+    margin-left: 10rem;
+    border-radius: 2rem;
+  }
+  
+  .cat3 {
+    width: auto;
+    height: 25rem;
+    margin-left: 10rem;
+    border-radius: 2rem;
+  }
+
+  .tenor-gif-embed{
+    margin-left: 30%;
+    margin-bottom: 5rem;
+  }
 
   .denk-one-regular {
     border-radius: 2rem;
