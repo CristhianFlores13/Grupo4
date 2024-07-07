@@ -1,0 +1,61 @@
+.btn-custom {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #45a049;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+
+
+
+.donate-container {
+    padding: 50px 0;
+}
+.btn-donate-final {
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.donation-amounts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+#donationImage {
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
