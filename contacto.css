@@ -1,141 +1,145 @@
-/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .form-group textarea {
-    resize: vertical;
-    min-height: 150px;
-  }
-  
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  footer {
-    background-color: #0e0e0e;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  }
-  
-  footer p {
-    color: #fff; /* Cambia el color del texto a blanco (#fff) */
-  }
+  background: #181818;
+  color: #fff;
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0 1.5em;
+}
 
-  #response {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #e7f7e3;
-    border: 1px solid #7dc47f;
-    border-radius: 5px;
-    display: none;
-    text-align: center;
-  }
-/* Estilos para el menú de navegación */
-nav {
-    background-color: #333;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  nav ul li {
-    float: left;
-  }
-  
-  nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    background-color: #555;
-  }
-  
-  nav ul li a.current {
-    background-color: #4CAF50;
-  }
-  
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
 
-  
-  /* Estilos para diseño responsive */
-  @media only screen and (max-width: 600px) {
-    .container {
-      padding: 10px;
-    }
-  
-    .form-group input[type="text"],
-    .form-group input[type="email"],
-    .form-group textarea {
-      padding: 8px;
-    }
-  
-    button[type="submit"] {
-      padding: 8px 16px;
-    }
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo span {
+  color: #B70E21;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: #222222;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+  background: #B70E21;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+  body {
+      padding: 0 4em;
   }
-  
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+      padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+}
+.back-to-top {
+  position: fixed; /* Posición fija */
+  bottom: 20px; /* Distancia desde el borde inferior */
+  right: 20px; /* Distancia desde el borde derecho */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 4px; /* Borde redondeado */
+  display: none; /* Ocultar inicialmente */
+  transition: opacity 0.3s ease; /* Transición de opacidad */
+}
+
+.back-to-top:hover {
+  background-color: #0056b3; /* Color de fondo en hover */
+}
+
+.back-to-top i {
+  margin-right: 5px; /* Margen derecho para el icono */
+}
+
+/* Mostrar el botón cuando se hace scroll hacia abajo */
+@media (min-width: 768px) {
+  .back-to-top {
+      display: block; /* Mostrar solo en dispositivos mayores a 768px */
+  }
+}
